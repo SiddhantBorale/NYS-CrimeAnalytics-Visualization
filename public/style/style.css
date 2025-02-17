@@ -1,0 +1,148 @@
+/* css stylesheet */
+  h1 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  }
+
+  a {
+  color: black;
+  text-decoration: none;
+  width: 100%; 
+  height: 100%;
+  }
+
+
+  button {
+  background-color: lightcyan; 
+  border-radius: 2px;
+  color: white;
+  padding: 10px 100px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 16px; 
+  margin: 5px 2px;
+  border-radius: 5px;
+  }
+
+  button:hover {
+  background-color: teal; 
+  }
+
+
+  .column-label, .row-label {
+  font-size: 12px;
+  fill: #555;
+  }
+
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-items: center;
+  }
+
+  .axis path,
+  .axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #ccc;
+  stroke-width: 1;
+  }
+
+  .axis text {
+  font-size: 12px;
+  fill: #333;
+  }
+
+  g text {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #000;
+  }
+
+  .axis-label {
+  text-anchor: middle;
+  font-size: 14px;
+  fill: #000;
+  font-weight: bold;
+  pointer-events: none;
+  }
+
+  g.axis .domain {
+  display: flex;
+  }
+
+
+  .xLabel {
+  font-size: 12px;
+  fill: #333;
+  transform: translateY(20px);
+  }
+
+  .yLabel {
+  font-size: 12px;
+  fill: #333;
+  text-anchor: end;
+  }
+
+  circle {
+  fill: #69b3a2;
+  opacity: 0.7;
+  stroke: none;
+  }
+
+  #scatterplot-chart,  #parallel-chart,  #matrix-chart, 
+  #mds-data-chart, #mds-attributes-chart, #scree-plot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-anchor: middle;
+  fill: #333;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color:antiquewhite;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .dashboard-container {
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    background-color:antiquewhite;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .visualization-grid {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .chart-container {
+    background-color:rgb(255, 253, 239);
+    padding: 1rem;
+    border-radius: 4px;
+    width: 600px;
+    height: 300px;
+    overflow: visible;
+    border: 1px solid black; 
+
+  }
+

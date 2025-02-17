@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style/style.css">
+
+  <script src="https://d3js.org/d3.v7.js"></script>
+  <script src="/js/components/app.js"></script>
+
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>CSE 332 Lab 5 Dashboard - Siddhant Borale</h1>
+    </header>
+
+    <div class="visualization-grid">
+      <div id="barchart-chart" class="chart-container">
+        <div id="controls">
+
+          <label for="variable-select">Select Attribute:</label>
+          <select id="variable-select">
+            <option value="Employed">Employed</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Crime Index Total">Crime Index Total</option>
+            <option value="Violent Total">Violent Total</option>
+            <option value="Property Total">Property Total</option>
+            <option value="Burglary">Burglary</option>
+            <option value="Larceny">Larceny</option>
+            <option value="Motor Vehicle Theft">Motor Vehicle Theft</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="mds-attr-chart" class="chart-container"></div>
+
+      <div id="area-chart" class="chart-container">
+        <div id="area-controls">
+          <label for="year-select">Select Year:</label>
+          <select id="year-select"></select>
+
+          <label for="county-select">Select County:</label>
+          <select id="county-select">
+            <option value="All Counties">All Counties</option>
+          </select>
+        </div>
+      </div>
+      <div id="parallel-coordinates-chart" class="chart-container"></div>
+    </div>
+  </div>
+</body>
+
+</html>
